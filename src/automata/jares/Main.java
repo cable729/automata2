@@ -5,17 +5,19 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         Scanner scanny = new Scanner(System.in);
+        int rules = scanny.nextInt();
 
-        String input = scanny.nextLine();
-        while (scanny.hasNextLine()) {
-            String line = scanny.nextLine();
-            if (true) {
-                System.out.println("yes");
-            } else {
-                System.out.println("no");
-            }
+        ContextFreeGrammar g = new ContextFreeGrammar();
+        for (int i = 0; i < rules; i++){
+            String input = scanny.nextLine();
+            g.Productions.add(new ProductionRule(input.charAt(0), input.substring(3)));
         }
+
+        // Convert CFG
+
+        // Test PDA
+
+        // Output yes/no
     }
 }
