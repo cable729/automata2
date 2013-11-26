@@ -13,14 +13,12 @@ public class Main {
         // input may contain terminals union "!" (the empty string)
 
         ContextFreeGrammar g = new ContextFreeGrammar(variables, terminals);
-        for (int i = 0; i < rules; i++){
+        for (int i = 0; i < rules; i++) {
             String input = scanny.nextLine();
             g.productions.add(new ProductionRule(input.charAt(0), input.substring(3)));
         }
 
-        // Convert CFG
-
-        // Test PDA
+        // Test
 
         // Output yes/no
     }
