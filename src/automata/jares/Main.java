@@ -8,10 +8,14 @@ public class Main {
         Scanner scanny = new Scanner(System.in);
         int rules = scanny.nextInt();
 
-        ContextFreeGrammar g = new ContextFreeGrammar();
+        String variables = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String terminals = "abcdefghijklmnopqrstuvwxyz_";
+        // input may contain terminals union "!" (the empty string)
+
+        ContextFreeGrammar g = new ContextFreeGrammar(variables, terminals);
         for (int i = 0; i < rules; i++){
             String input = scanny.nextLine();
-            g.Productions.add(new ProductionRule(input.charAt(0), input.substring(3)));
+            g.productions.add(new ProductionRule(input.charAt(0), input.substring(3)));
         }
 
         // Convert CFG
