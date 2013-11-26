@@ -1,7 +1,6 @@
 package automata.jares;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
-public class StateSet {
-    public final ArrayList<State> states = new ArrayList<State>();
+public class StateSet extends HashSet<State> {
 }
