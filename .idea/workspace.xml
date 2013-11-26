@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeedd79-82de-4f69-a8b9-9244c1d86554" name="Default" comment="Added CFG input">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/automata/jares/MatchingProduction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/automata/jares/Chart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/automata/jares/State.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
+      <change type="DELETED" beforePath="C:\Users\Caleb\IdeaProjects\automata2\src\automata\jares\MatchingProduction.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" afterPath="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/Main.java" afterPath="$PROJECT_DIR$/src/automata/jares/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/ProductionRule.java" afterPath="$PROJECT_DIR$/src/automata/jares/ProductionRule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="automata2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439412681" ignored="false" />
     <file path="/Main.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385438798492" ignored="false" />
-    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439434349" ignored="false" />
+    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487381900" ignored="false" />
     <file path="/ProductionRule.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1384835930148" ignored="false" />
     <file path="/fragment.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439087394" ignored="false" />
-    <file path="/MatchingProduction.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439462705" ignored="false" />
+    <file path="/MatchingProduction.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487042212" ignored="false" />
+    <file path="/Chart.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487495879" ignored="false" />
+    <file path="/StateSet.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487527799" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,22 +79,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContextFreeGrammar.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContextFreeGrammar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="51" selection-start="667" selection-end="667" vertical-scroll-proportion="0.522807">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#592#612#0" expanded="true" />
+                <element signature="e#645#652#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatchingProduction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/automata/jares/MatchingProduction.java">
+      <file leaf-file-name="State.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="37" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+            <state line="4" column="32" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,7 +103,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,8 +112,30 @@
       <file leaf-file-name="ProductionRule.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/ProductionRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chart.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/automata/jares/Chart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="46" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#137#147#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StateSet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/automata/jares/StateSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="66" selection-start="144" selection-end="144" vertical-scroll-proportion="0.1491228">
+              <folding>
+                <element signature="e#134#141#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,10 +159,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/automata/jares/MatchingProduction.java" />
-        <option value="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/Main.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/ProductionRule.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/MatchingProduction.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/State.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/Chart.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
       </list>
     </option>
   </component>
@@ -322,6 +350,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -336,7 +365,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -413,7 +441,7 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#592#612#0" expanded="true" />
+            <element signature="e#645#652#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,31 +472,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/ProductionRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/MatchingProduction.java">
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="37" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+        <state line="4" column="32" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="51" selection-start="667" selection-end="667" vertical-scroll-proportion="0.522807">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#592#612#0" expanded="true" />
+            <element signature="e#645#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/Chart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="46" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#137#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/StateSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="66" selection-start="144" selection-end="144" vertical-scroll-proportion="0.1491228">
+          <folding>
+            <element signature="e#134#141#0" expanded="true" />
           </folding>
         </state>
       </provider>

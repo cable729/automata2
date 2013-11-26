@@ -15,15 +15,36 @@ public class ContextFreeGrammar {
         productions = new ArrayList<ProductionRule>();
     }
 
+    // Using algorithm http://en.wikipedia.org/wiki/Earley_parser
     public boolean doesAccept(String string) {
-        Queue<MatchingProduction> q = new SynchronousQueue<MatchingProduction>();
-        q.add(new MatchingProduction(productions.get(0)));
+        Queue<State> q = new SynchronousQueue<State>();
+        q.add(new State(productions.get(0)));
         return doesAccept(q, string);
     }
 
-    private boolean doesAccept(Queue<MatchingProduction> currentProds, String currentString) {
+    private boolean doesAccept(Queue<State> currentProds, String currentString) {
 
 
         return false;
+    }
+
+    // 1. Find states in S(k) where the next symbol to be matched is a variable
+    // 2. Add the state defined by that variable with the dot position at 0 to S(k)
+    private void predict(){
+
+    }
+
+    // 1. Find states in S(k) where the next symbol to be matched is the same as the next in the string
+    // 2. Add the state with dot position incremented to S(k+1)
+    private void scan(){
+
+    }
+
+    // 1. Find states in S(k) where the dot position is at the end of the string
+    // 2. For each found state (with origin j and rule defined for variable v):
+    //      a. Find states in S(j) whose symbol after the dot position is v
+    //      b. Add each found state to S(k) with their dot position incremented
+    private void complete(){
+
     }
 }
