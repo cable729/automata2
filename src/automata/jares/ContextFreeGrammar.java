@@ -14,13 +14,31 @@ public class ContextFreeGrammar {
         productions = new ArrayList<ProductionRule>();
     }
 
+    public void removeEmptyStrings() {
+        ArrayList<ProductionRule> toAdd = new ArrayList<ProductionRule>();
+        ArrayList<ProductionRule> toRemove = new ArrayList<ProductionRule>();
+        for (ProductionRule p : productions) {
+            if (p.rule.equals("!")) {
+                toRemove.add(p);
+                for (ProductionRule p2 : productions) {
+                    // If any rules contain the variable that maps to the empty string, duplicate it without that variable
+                    if (p2.rule.indexOf(p.variable) != -1){
+                        toAdd.add(new ProductionRule(p2.variable, p2.rule.replaceAll(p.variable + "", "")));
+                    }
+                }
+            }
+        }
+        productions.removeAll(toRemove);
+        productions.addAll(toAdd);
+    }
+
     // Using algorithm http://en.wikipedia.org/wiki/Earley_parser
     public boolean doesAccept(String string) {
         Chart chart = new Chart();
         for (int i = 0; i <= string.length(); i++) {
             chart.add(new StateSet());
         }
-        chart.get(0).add(new State(productions.get(0)));
+        chart.get(0).add(new State(new ProductionRule('*', productions.get(0).variable + "")));
 
         for (int i = 0; i <= string.length();
              i++) {
@@ -48,7 +66,7 @@ public class ContextFreeGrammar {
         }
 
         for (State s : chart.get(string.length())) {
-            if (s.variable == productions.get(0).variable && s.origin == 0) {
+            if (s.variable == '*' && s.origin == 0) {
                 return true;
             }
         }
@@ -60,10 +78,12 @@ public class ContextFreeGrammar {
     private StateSet predict(Chart chart, int k) {
         StateSet toAdd = new StateSet();
         for (State s : chart.get(k)) {
-            if (s.isNextSymbolVariable(variables)) {
+            if (s.isIncomplete() && s.isNextSymbolVariable(variables)) {
                 for (ProductionRule prod : productions) {
                     if (prod.variable == s.nextSymbol()) {
-                        toAdd.add(new State(prod));
+                        State newState = new State(prod);
+                        newState.origin = k;
+                        toAdd.add(newState);
                     }
                 }
             }
@@ -94,7 +114,7 @@ public class ContextFreeGrammar {
         for (State s : chart.get(k)) {
             if (!s.isIncomplete()) {
                 for (State s2 : chart.get(s.origin)) {
-                    if (s2.nextSymbol() == s.variable) {
+                    if (s2.isIncomplete() && s2.nextSymbol() == s.variable) {
                         toAdd.add(s2.newStateWithDotIncremented());
                     }
                 }

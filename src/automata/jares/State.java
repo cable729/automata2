@@ -35,7 +35,7 @@ public class State extends ProductionRule {
     }
 
     public boolean isNextSymbolVariable(String variables) {
-        return variables.indexOf(nextSymbol()) != -1;
+        return !rule.isEmpty() && variables.indexOf(nextSymbol()) != -1;
     }
 
     public char nextSymbol() {
@@ -45,6 +45,7 @@ public class State extends ProductionRule {
     public State newStateWithDotIncremented() {
         State s = new State(this);
         s.dot_position = this.dot_position + 1;
+        s.origin = this.origin;
         return s;
     }
 
