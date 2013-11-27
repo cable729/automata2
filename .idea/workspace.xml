@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faeedd79-82de-4f69-a8b9-9244c1d86554" name="Default" comment="Added CFG input">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/Chart.java" afterPath="$PROJECT_DIR$/src/automata/jares/Chart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" afterPath="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/StateSet.java" afterPath="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/Main.java" afterPath="$PROJECT_DIR$/src/automata/jares/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/automata/jares/State.java" afterPath="$PROJECT_DIR$/src/automata/jares/State.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="automata2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439412681" ignored="false" />
-    <file path="/Main.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385438798492" ignored="false" />
-    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488103952" ignored="false" />
+    <file path="/Main.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385529030571" ignored="false" />
+    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385528307681" ignored="false" />
     <file path="/ProductionRule.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1384835930148" ignored="false" />
     <file path="/fragment.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439087394" ignored="false" />
     <file path="/MatchingProduction.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487042212" ignored="false" />
     <file path="/Chart.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488070163" ignored="false" />
     <file path="/StateSet.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488050837" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488077592" ignored="false" />
+    <file path="/State.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385528238462" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <file leaf-file-name="ContextFreeGrammar.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="354" selection-end="354" vertical-scroll-proportion="0.37777779">
+            <state line="13" column="72" selection-start="415" selection-end="415" vertical-scroll-proportion="0.44646466">
               <folding />
             </state>
           </provider>
@@ -89,7 +90,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+            <state line="25" column="9" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +126,7 @@
       <file leaf-file-name="State.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+            <state line="25" column="17" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,13 +151,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/automata/jares/Main.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/ProductionRule.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/MatchingProduction.java" />
-        <option value="$PROJECT_DIR$/src/automata/jares/State.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/Chart.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/State.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/Main.java" />
       </list>
     </option>
   </component>
@@ -465,9 +466,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/Chart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -479,23 +480,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/Chart.java">
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+        <state line="25" column="17" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+        <state line="25" column="9" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="354" selection-end="354" vertical-scroll-proportion="0.37777779">
+        <state line="13" column="72" selection-start="415" selection-end="415" vertical-scroll-proportion="0.44646466">
           <folding />
         </state>
       </provider>

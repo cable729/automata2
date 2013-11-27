@@ -19,7 +19,10 @@ public class Main {
         }
 
         // Test
-
-        // Output yes/no
+        while (scanny.hasNext()){
+            String line = scanny.nextLine();
+            String output = g.doesAccept(line) ? "yes" : "no";
+            System.out.println(output);
+        }
     }
 }

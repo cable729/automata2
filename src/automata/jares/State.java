@@ -8,4 +8,21 @@ public class State extends ProductionRule {
         super(rule.variable, rule.rule);
     }
 
+    public boolean isIncomplete() {
+        return dot_position == rule.length();
+    }
+
+    public boolean isNextSymbolVariable(String variables) {
+        return variables.indexOf(nextSymbol()) != -1;
+    }
+
+    public char nextSymbol() {
+        return rule.charAt(dot_position);
+    }
+
+    public State newStateWithDotIncremented() {
+        State s = new State(this);
+        s.dot_position++;
+        return s;
+    }
 }
