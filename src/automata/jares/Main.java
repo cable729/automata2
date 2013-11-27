@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanny = new Scanner(System.in);
         int rules = scanny.nextInt();
+        scanny.nextLine();
 
         String variables = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String terminals = "abcdefghijklmnopqrstuvwxyz_";

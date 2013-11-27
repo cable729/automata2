@@ -9,7 +9,7 @@ public class State extends ProductionRule {
     }
 
     public boolean isIncomplete() {
-        return dot_position == rule.length();
+        return dot_position < rule.length();
     }
 
     public boolean isNextSymbolVariable(String variables) {
@@ -24,5 +24,25 @@ public class State extends ProductionRule {
         State s = new State(this);
         s.dot_position++;
         return s;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        State state = (State) o;
+
+        if (dot_position != state.dot_position) return false;
+        if (origin != state.origin) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = origin;
+        result = 31 * result + dot_position;
+        return result;
     }
 }

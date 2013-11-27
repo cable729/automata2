@@ -10,14 +10,14 @@
     <ignored path="automata2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439412681" ignored="false" />
-    <file path="/Main.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385529030571" ignored="false" />
-    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385528307681" ignored="false" />
+    <file path="/Main.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385529204415" ignored="false" />
+    <file path="/ContextFreeGrammar.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385531237457" ignored="false" />
     <file path="/ProductionRule.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1384835930148" ignored="false" />
-    <file path="/fragment.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385439087394" ignored="false" />
+    <file path="/fragment.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385529137257" ignored="false" />
     <file path="/MatchingProduction.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385487042212" ignored="false" />
     <file path="/Chart.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488070163" ignored="false" />
-    <file path="/StateSet.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385488050837" ignored="false" />
-    <file path="/State.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385528238462" ignored="false" />
+    <file path="/StateSet.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385531722693" ignored="false" />
+    <file path="/State.java" changelist="faeedd79-82de-4f69-a8b9-9244c1d86554" time="1385532095595" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +69,53 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" line="43" class="automata.jares.ContextFreeGrammar" package="automata.jares">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" line="24" class="automata.jares.ContextFreeGrammar" package="automata.jares">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" line="65" class="automata.jares.ContextFreeGrammar" package="automata.jares">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -78,10 +125,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContextFreeGrammar.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContextFreeGrammar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="72" selection-start="415" selection-end="415" vertical-scroll-proportion="0.44646466">
+            <state line="72" column="41" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +137,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="9" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,19 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StateSet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/automata/jares/StateSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="State.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="State.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="17" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+            <state line="19" column="32" selection-start="490" selection-end="490" vertical-scroll-proportion="0.05059524">
               <folding />
             </state>
           </provider>
@@ -153,18 +191,18 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/automata/jares/ProductionRule.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/MatchingProduction.java" />
-        <option value="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/Chart.java" />
-        <option value="$PROJECT_DIR$/src/automata/jares/State.java" />
-        <option value="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
         <option value="$PROJECT_DIR$/src/automata/jares/Main.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/StateSet.java" />
+        <option value="$PROJECT_DIR$/src/automata/jares/State.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
+    <option name="x" value="506" />
     <option name="y" value="30" />
-    <option name="width" value="683" />
+    <option name="width" value="860" />
     <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -254,6 +292,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="Downloaded.Files.Path" value="C:\Users\Caleb\IdeaProjects\automata2\lib" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -277,7 +316,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="automata2" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -299,6 +344,11 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -336,26 +386,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="30" width="683" height="738" extended-state="0" />
+    <frame x="506" y="30" width="860" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37586206" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3305369" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.531401" sideWeight="0.6694631" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959743" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -421,7 +471,11 @@
     <MESSAGE value="Added CFG input" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -466,6 +520,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="41" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/automata/jares/StateSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="101" selection-end="101" vertical-scroll-proportion="0.30357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/Chart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
@@ -473,30 +548,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/StateSet.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+        <state line="148" column="19" selection-start="5841" selection-end="5841" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/automata/jares/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="9" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/automata/jares/ContextFreeGrammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="415" selection-end="415" vertical-scroll-proportion="0.44646466">
+        <state line="19" column="32" selection-start="490" selection-end="490" vertical-scroll-proportion="0.05059524">
           <folding />
         </state>
       </provider>

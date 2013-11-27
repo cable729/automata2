@@ -16,23 +16,28 @@ public class ContextFreeGrammar {
     // Using algorithm http://en.wikipedia.org/wiki/Earley_parser
     public boolean doesAccept(String string) {
         Chart chart = new Chart();
-        chart.add(new StateSet());
+        for (int i = 0; i < string.length(); i++) {
+            chart.add(new StateSet());
+        }
         chart.get(0).add(new State(productions.get(0)));
 
         for (int i = 0; i < string.length(); i++) {
             for (State s : chart.get(i)) {
-                boolean statesAdded = false;
+                int num_Sk = chart.get(i).size();
+                int num_Skplus1 = (i + 1 < string.length()) ? chart.get(i + 1).size() : -1;
                 do {
                     if (s.isIncomplete()) {
                         if (s.isNextSymbolVariable(variables)) {
-                            statesAdded = statesAdded || predict(chart, i);
+                            predict(chart, i);
                         } else if (i < string.length() + 1) {
-                            statesAdded = statesAdded || scan(chart, i, string.charAt(i));
+                            scan(chart, i, string.charAt(i));
                         }
                     } else {
-                        statesAdded = statesAdded || complete(chart, i);
+                        complete(chart, i);
                     }
-                } while (statesAdded);
+
+                }
+                while (num_Sk != chart.get(i).size() || i + 1 < string.length() && num_Skplus1 != chart.get(i + 1).size());
             }
         }
 
@@ -44,13 +49,17 @@ public class ContextFreeGrammar {
         return false;
     }
 
-    // 1. Find states in S(k) where the next symbol to be matched is a variable
-    // 2. Add the state defined by that variable with the dot position at 0 to S(k)
+    // 1. Find states in S(k) where the next symbol to be matched is a variable (v)
+    // 2. Add every rule in the production defined by variable v to S(k)
     private boolean predict(Chart chart, int k) {
         StateSet toAdd = new StateSet();
         for (State s : chart.get(k)) {
             if (s.isNextSymbolVariable(variables)) {
-                toAdd.add(s);
+                for (ProductionRule prod : productions) {
+                    if (prod.variable == s.nextSymbol()){
+                        toAdd.add(new State(prod));
+                    }
+                }
             }
         }
 
@@ -78,10 +87,10 @@ public class ContextFreeGrammar {
     //      b. Add each found state to S(k) with their dot position incremented
     private boolean complete(Chart chart, int k) {
         StateSet toAdd = new StateSet();
-        for (State s : chart.get(k)){
-            if (!s.isIncomplete()){
-                for (State s2 : chart.get(s.origin)){
-                    if (s2.nextSymbol() == s.variable){
+        for (State s : chart.get(k)) {
+            if (!s.isIncomplete()) {
+                for (State s2 : chart.get(s.origin)) {
+                    if (s2.nextSymbol() == s.variable) {
                         toAdd.add(s2.newStateWithDotIncremented());
                     }
                 }
